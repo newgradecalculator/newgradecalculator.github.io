@@ -1,53 +1,288 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 
 
-    <title>Vex 5 Unblocked</title>
-    <link rel="stylesheet" href="assets/css/app.css" type="text/css" />
+    <script src="scripts/effects.js" defer></script>
+    <script src="scripts/index.js" defer></script>
 </head>
 
 <body>
-    <div id="content"></div>
-    <div id="loader">Loading...</div>
-    <div id="orientation"></div>
-    <script type="text/javascript" src="fbrq/js/fix-url.js"></script>
+    <main>
+        <nav>
+            <h2>The Rainy Edition</h2>
+            <span>
+                <a href="/" class="current">Games</a>
+                <a href="/clock.html">Clock</a>
+                <a href="/proxy.html">Proxy</a>
+            </span>
+        </nav>
+        <h1>The Rainy Edition</h1>
+        <p>I hate people who <span id="special">cooked</span></p>
 
-    <script type="text/javascript">
-        var gameName = 'vex-5.min.js';
+        <div class="stats">
+            <div class="stat">
+                <h2 id="visits"></h2>
+                <p>Total Visits</p>
+            </div>
+            <div class="stat">
+                <h2>56</h2>
+                <p>Games</p>
+                <sub>yes, i added a lot of games</sub>
+            </div>
+            <div class="stat">
+                <h2 id="users"></h2>
+                <p>Users</p>
+            </div>
+
+        </div>
+        <!-- <input type="text" id="search" placeholder="Search for a game"> -->
+        <div class="games">
+
+            <div class="game-container"><a target="_blank" href="/games/blumgi-slime/index.html"><img
+                        src="/game-icons/blumgi-slime.png" alt="" class="game-image"><span class="game-title">Blumgi
+                        Slime</span></a></div>
+            <div class="game-container"><a target="_blank" href="/games/cluster-rush/index.html"><img
+                        src="/game-icons/cluster-rush.png" alt="" class="game-image"><span class="game-title">Cluster
+                        Rush</span></a></div>
+            <div class="game-container"><a target="_blank" href="/games/dadish/index.html"><img
+                        src="/game-icons/dadish.png" alt="" class="game-image"><span
+                        class="game-title">Dadish</span></a></div>
+            <div class="game-container"><a target="_blank" href="/games/geometry-dash/index.html"><img
+                        src="/game-icons/geometry-dash.png" alt="" class="game-image"><span class="game-title">Geometry
+                        Dash</span></a></div>
+            <div class="game-container"><a target="_blank" href="/games/moto-x3m/index.html"><img
+                        src="/game-icons/moto-x3m.png" alt="" class="game-image"><span class="game-title">Moto
+                        X3M</span></a></div>
+            <div class="game-container"><a target="_blank" href="/games/ovo/index.html"><img src="/game-icons/ovo.png"
+                        alt="" class="game-image"><span class="game-title">OvO</span></a></div>
+            <div class="game-container"><a target="_blank" href="/games/slope/index.html"><img
+                        src="/game-icons/slope.png" alt="" class="game-image"><span class="game-title">Slope</span></a>
+            </div>
+            <div class="game-container"><a target="_blank" href="/games/stickman-hook/index.html"><img
+                        src="/game-icons/stickman-hook.png" alt="" class="game-image"><span class="game-title">Stickman
+                        Hook</span></a></div>
+            <div class="game-container"><a target="_blank" href="/games/vex-3/index.html"><img
+                        src="/game-icons/vex-3.png" alt="" class="game-image"><span class="game-title">Vex 3</span></a>
+            </div>
+            <div class="game-container"><a target="_blank" href="/games/vex-4/index.html"><img
+                        src="/game-icons/vex-4.png" alt="" class="game-image"><span class="game-title">Vex 4</span></a>
+            </div>
+            <div class="game-container"><a target="_blank" href="/games/vex-5/index.html"><img
+                        src="/game-icons/vex-5.png" alt="" class="game-image"><span class="game-title">Vex 5</span></a>
+            </div>
+            <div class="game-container"><a target="_blank" href="/games/vex-6/index.html"><img
+                        src="/game-icons/vex-6.png" alt="" class="game-image"><span class="game-title">Vex 6</span></a>
+            </div>
+            <div class="game-container"><a target="_blank" href="/games/vex-7/index.html"><img
+                        src="/game-icons/vex-7.png" alt="" class="game-image"><span class="game-title">Vex 7</span></a>
+            </div>
+            <div class="game-container"><a target="_blank" href="/games/vex-8/index.html"><img
+                        src="/game-icons/vex-8.png" alt="" class="game-image"><span class="game-title">Vex 8</span></a>
+            </div>
+            <div class="game-container"><a target="_blank" href="/games/cookie-clicker/index.html"><img
+                        src="/game-icons/cookie-clicker.png" alt="" class="game-image"><span class="game-title">Cookie
+                        Clicker</span></a></div>
+            <div class="game-container"><a target="_blank" href="/games/2048/index.html"><img src="/game-icons/2048.png"
+                        alt="" class="game-image"><span class="game-title">2048</span></a></div>
+
+            <div class="game-container"><a target="_blank" href="/games/basket-random/index.html"><img
+                        src="/game-icons/basketrandom.png" alt="" class="game-image"><span class="game-title">Basket
+                        Random</span></a></div>
+            <div class="game-container"><a target="_blank" href="/games/bitlife/index.html"><img
+                        src="/game-icons/bitlife.png" alt="" class="game-image"><span
+                        class="game-title">BitLife</span></a></div>
+            <div class="game-container"><a target="_blank" href="/games/drive-mad/index.html"><img
+                        src="/game-icons/drivemad.png" alt="" class="game-image"><span class="game-title">Drive
+                        Mad</span></a></div>
+            <div class="game-container"><a target="_blank" href="/games/eaglercraft/index.html"><img
+                        src="/game-icons/eaglercraft.png" alt="" class="game-image"><span
+                        class="game-title">Eaglercraft</span></a></div>
+            <div class="game-container"><a target="_blank" href="/games/tetris/index.html"><img
+                        src="/game-icons/tetris.png" alt="" class="game-image"><span
+                        class="game-title">Tetris</span></a></div>
+            <!-- Deal or no Deal -->
+            <div class="game-container"><a target="_blank" href="/games/deal-or-no-deal/index.html"><img
+                        src="/game-icons/dealornodeal.png" alt="" class="game-image
+                        "><span class="game-title">Deal or No Deal</span></a></div>
+            <!-- Peggle -->
+            <div class="game-container"><a target="_blank" href="/games/peggle/index.html"><img
+                        src="/game-icons/peggle.png" alt="" class="game-image
+                "><span class="game-title">Peggle (Bad Version)</span></a></div>
+            <!-- Subway Surfers -->
+            <div class="game-container"><a target="_blank" href="/games/subway-surfers/index.html"><img
+                        src="/game-icons/subway-surfers.png" alt="" class="game-image
+                "><span class="game-title">Subway Surfers</span></a></div>
+
+            <div class="game-container"><a target="_blank" href="/games/retro-bowl/index.html"><img
+                        src="/game-icons/retro-bowl.png" alt="" class="game-image
+            "><span class="game-title">Retro Bowl</span></a></div>
+
+            <!-- Blumgi Ball -->
+            <div class="game-container"><a target="_blank" href="/games/blumgi-ball/index.html"><img
+                        src="/game-icons/blumgi-ball.png" alt="" class="game-image
+    "><span class="game-title">Blumgi Ball</span></a></div>
+
+            <!-- Blumgi Bloom -->
+            <div class="game-container"><a target="_blank" href="/games/blumgi-bloom/index.html"><img
+                        src="/game-icons/blumgi-bloom.png" alt="" class="game-image
+    "><span class="game-title">Blumgi Bloom</span></a></div>
+
+            <!-- Blumgi Castle -->
+            <div class="game-container"><a target="_blank" href="/games/blumgi-castle/index.html"><img
+                        src="/game-icons/blumgi-castle.png" alt="" class="game-image
+    "><span class="game-title">Blumgi Castle</span></a></div>
+
+            <!-- Blumgi Dragon -->
+            <div class="game-container"><a target="_blank" href="/games/blumgi-dragon/index.html"><img
+                        src="/game-icons/blumgi-dragon.png" alt="" class="game-image
+    "><span class="game-title">Blumgi Dragon</span></a></div>
+
+            <!-- Blumgi Racers -->
+            <div class="game-container"><a target="_blank" href="/games/blumgi-racers/index.html"><img
+                        src="/game-icons/blumgi-racers.png" alt="" class="game-image
+    "><span class="game-title">Blumgi Racers</span></a></div>
+
+            <!-- Blumgi Rocket -->
+            <div class="game-container"><a target="_blank" href="/games/blumgi-rocket/index.html"><img
+                        src="/game-icons/blumgi-rocket.png" alt="" class="game-image
+    "><span class="game-title">Blumgi Rocket</span></a></div>
+
+            <!-- Blumgi Soccer -->
+            <div class="game-container"><a target="_blank" href="/games/blumgi-soccer/index.html"><img
+                        src="/game-icons/blumgi-soccer.png" alt="" class="game-image
+    "><span class="game-title">Blumgi Soccer</span></a></div>
+
+            <!-- Candy Crush -->
+            <div class="game-container"><a target="_blank" href="/games/candy-crush/index.html"><img
+                        src="/game-icons/candy-crush.png" alt="" class="game-image
+    "><span class="game-title">Candy Crush</span></a></div>
+
+            <!-- Chicken Merge -->
+            <div class="game-container"><a target="_blank" href="/games/chicken-merge/index.html"><img
+                        src="/game-icons/chicken-merge.png" alt="" class="game-image
+    "><span class="game-title">Chicken Merge</span></a></div>
+
+            <!-- Choppy Orc -->
+            <div class="game-container"><a target="_blank" href="/games/choppy-orc/index.html"><img
+                        src="/game-icons/choppy-orc.png" alt="" class="game-image
+    "><span class="game-title">Choppy Orc</span></a></div>
+
+            <!-- Crossy Road -->
+            <div class="game-container"><a target="_blank" href="/games/crossy-road/index.html"><img
+                        src="/game-icons/crossy-road.png" alt="" class="game-image
+    "><span class="game-title">Crossy Road</span></a></div>
+
+            <!-- Dadish 2 -->
+            <div class="game-container"><a target="_blank" href="/games/dadish-2/index.html"><img
+                        src="/game-icons/dadish-2.png" alt="" class="game-image
+    "><span class="game-title">Dadish 2</span></a></div>
+
+            <!-- Dadish 3 -->
+            <div class="game-container"><a target="_blank" href="/games/dadish-3/index.html"><img
+                        src="/game-icons/dadish-3.png" alt="" class="game-image
+    "><span class="game-title">Dadish 3</span></a></div>
+
+            <!-- Dadish 3D -->
+            <div class="game-container"><a target="_blank" href="/games/dadish-3d/index.html"><img
+                        src="/game-icons/dadish-3d.png" alt="" class="game-image
+    "><span class="game-title">Dadish 3D</span></a></div>
+
+            <!-- Dune -->
+            <div class="game-container"><a target="_blank" href="/games/dune/index.html"><img src="/game-icons/dune.png"
+                        alt="" class="game-image
+    "><span class="game-title">Dune</span></a></div>
+
+            <!-- Get Away Shootout -->
+            <div class="game-container"><a target="_blank" href="/games/get-away-shootout/index.html"><img
+                        src="/game-icons/get-away-shootout.png" alt="" class="game-image
+    "><span class="game-title">Get Away Shootout</span></a></div>
+
+            <!-- Monkeymart -->
+            <div class="game-container"><a target="_blank" href="/games/monkeymart/index.html"><img
+                        src="/game-icons/monkeymart.png" alt="" class="game-image
+    "><span class="game-title">Monkeymart</span></a></div>
+
+            <!-- Monster Tracks -->
+            <div class="game-container"><a target="_blank" href="/games/monster-tracks/index.html"><img
+                        src="/game-icons/monster-tracks.png" alt="" class="game-image
+    "><span class="game-title">Monster Tracks</span></a></div>
+
+            <!-- Paper.io 2 -->
+            <div class="game-container"><a target="_blank" href="/games/paper-io-2/index.html"><img
+                        src="/game-icons/paper-io-2.png" alt="" class="game-image
+    "><span class="game-title">Paper.io 2</span></a></div>
+
+            <!-- Retro Highway -->
+            <div class="game-container"><a target="_blank" href="/games/retro-highway/index.html"><img
+                        src="/game-icons/retro-highway.png" alt="" class="game-image
+    "><span class="game-title">Retro Highway</span></a></div>
+
+            <!-- Rooftop Snipers -->
+            <div class="game-container"><a target="_blank" href="/games/rooftop-snipers/index.html"><img
+                        src="/game-icons/rooftop-snipers.png" alt="" class="game-image
+    "><span class="game-title">Rooftop Snipers</span></a></div>
+
+            <!-- Rooftop Snipers 2 -->
+            <div class="game-container"><a target="_blank" href="/games/rooftop-snipers-2/index.html"><img
+                        src="/game-icons/rooftop-snipers-2.png" alt="" class="game-image
+    "><span class="game-title">Rooftop Snipers 2</span></a></div>
+
+            <!-- Stickman Bike -->
+            <div class="game-container"><a target="_blank" href="/games/stickman-bike/index.html"><img
+                        src="/game-icons/stickman-bike.png" alt="" class="game-image
+    "><span class="game-title">Stickman Bike</span></a></div>
+
+            <!-- Superhot -->
+            <div class="game-container"><a target="_blank" href="/games/superhot/index.html"><img
+                        src="/game-icons/superhot.png" alt="" class="game-image
+    "><span class="game-title">Superhot</span></a></div>
+
+            <!-- Tag -->
+            <div class="game-container"><a target="_blank" href="/games/tag/index.html"><img src="/game-icons/tag.png"
+                        alt="" class="game-image
+    "><span class="game-title">Tag</span></a></div>
+
+            <!-- Temple of Boom -->
+            <div class="game-container"><a target="_blank" href="/games/temple-of-boom/index.html"><img
+                        src="/game-icons/temple-of-boom.png" alt="" class="game-image
+    "><span class="game-title">Temple of Boom</span></a></div>
+
+            <!-- Tiny Fishing -->
+            <div class="game-container"><a target="_blank" href="/games/tiny-fishing/index.html"><img
+                        src="/game-icons/tiny-fishing.png" alt="" class="game-image
+    "><span class="game-title">Tiny Fishing</span></a></div>
+
+            <!-- Tomb of the Mask -->
+            <div class="game-container"><a target="_blank" href="/games/tomb-of-the-mask/index.html"><img
+                        src="/game-icons/tomb-of-the-mask.png" alt="" class="game-image
+    "><span class="game-title">Tomb of the Mask</span></a></div>
+
+            <!-- Tunnel Rush -->
+            <div class="game-container"><a target="_blank" href="/games/tunnel-rush/index.html"><img
+                        src="/game-icons/tunnel-rush.png" alt="" class="game-image
+    "><span class="game-title">Tunnel Rush</span></a></div>
+
+            <!-- Volley Random -->
+            <div class="game-container"><a target="_blank" href="/games/volley-random/index.html"><img
+                        src="/game-icons/volley-random.png" alt="" class="game-image
+    "><span class="game-title">Volley Random</span></a></div>
+
+            <!-- Watermelon Game -->
+            <div class="game-container"><a target="_blank" href="/games/watermelon-game/index.html"><img
+                        src="/game-icons/watermelon-game.png" alt="" class="game-image
+    "><span class="game-title">Watermelon Game</span></a></div>
 
 
-        //This all here is for cache busting;
-        function addScript(src, buster, callback) {
-            var s = document.createElement('script');
-            s.setAttribute('src', src + '?v=' + buster);
-            if (typeof callback === 'function') {
-                s.onload = callback;
-            }
-            document.body.appendChild(s);
-        }
-
-        addScript('version.js', Date.now(), function() {
-
-            addScript(gameName, version, function() {
-                /**
-                 * Here we create the game
-                 */
-                
-                new Vex5.Game();
-
-            })
-
-        })
-    </script>
-  
+        </div>
+    </main>
 </body>
 
-
-<script src="../sitelock.js"></script>
 </html>

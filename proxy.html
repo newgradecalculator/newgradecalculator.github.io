@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy - The Rainy Edition</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/proxy.css">
+
+
+    <script src="baremux/index.js" defer></script>
+    <script src="epoxy/index.js" defer></script>
+    <script src="uv/uv.bundle.js" defer></script>
+    <script src="uv/uv.config.js" defer></script>
+    <script src="proxy/register-sw.js" defer></script>
+    <script src="proxy/search.js" defer></script>
+    <script src="proxy/index.js" defer></script>
+
+    <!-- Support for HTTP -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+</head>
+
+<body>
+    <main>
+        <nav>
+            <h2>The Rainy Edition</h2>
+            <span>
+                <a href="/">Games</a>
+                <a href="/clock.html">Clock</a>
+                <a href="/proxy.html" class="current">Proxy</a>
+            </span>
+        </nav>
+
+        <form id="uv-form">
+            <h1>Browse the Internet</h1>
+            <h1><span class="special">Freely</span></h1>
+            <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden" />
+            <input id="uv-address" type="text" placeholder="Enter URL or search Google" autofocus />
+
+            <div class="bookmarks">
+                <div class="bookmark">
+                    <a href="javascript: openFrame('https://google.com/')">
+                        <img src="assets/google.png" alt="" class="bookmark-icon">
+                        <br>
+                        <span class="bookmark-name">Google</span>
+                    </a>
+                </div>
+                <div class="bookmark">
+                    <a href="javascript: openFrame('https://discord.com/')">
+                        <img src="assets/discord.png" alt="" class="bookmark-icon">
+                        <br>
+                        <span class="bookmark-name">Discord</span>
+                    </a>
+                </div>
+                <div class="bookmark">
+                    <a href="javascript: openFrame('https://soundcloud.com/')">
+                        <img src="assets/soundcloud.png" alt="" class="bookmark-icon">
+                        <br>
+                        <span class="bookmark-name">SoundCloud</span>
+                    </a>
+                </div>
+                <div class="bookmark">
+                    <a href="javascript: openFrame('https://youtube.com/')">
+                        <img src="assets/youtube.png" alt="" class="bookmark-icon">
+                        <br>
+                        <span class="bookmark-name">Youtube</span>
+                    </a>
+                </div>
+        </form>
+
+    </main>
+</body>
+
+</html>
