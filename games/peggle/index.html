@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <link rel="stylesheet" href="/styles/ruffle.css">
+</head>
+
+<body>
+    <div id='ruffle'></div>
+    <script>
+        var swfobject = {};
+
+        swfobject.embedSWF = function (url, cont, width, height) {
+            var ruffle = window.RufflePlayer.newest(),
+                player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
+                    width: width,
+                    height: height,
+                    style: 'width: min(100vh, 100vw); height: min(100vh, 100vw);'
+                });
+
+            player.load({ url: url });
+        }
+
+        swfobject.embedSWF('Peggle.swf', 'ruffle', 500, 500);
+    </script>
+</body>
+
+</html>
